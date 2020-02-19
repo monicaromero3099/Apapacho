@@ -22,7 +22,7 @@ html, body{
     height: 130px;
 }
 .contenedor{
-    max-width: 960px;
+    max-width: 1200px;
     margin: 0px auto; /* para que deje el espacio a lado y lado*/
     display: flex; /* para que sus elementos queden en linea*/
     padding: 0px 1px; /* espacio a lado y lado*/
@@ -56,8 +56,17 @@ html, body{
     margin-left: -8px;
 }
 
-.mainInicio__imagenInicial{
-    width: 1440px;
-    height: 1084px;
-    
+.banner__imagenInicial{
+    width: 100%;
+      
 }
+
+
+.banner__info{
+    position: absolute;
+    top:450px;
+    left: 100px;
+    font-size: 21px;
+
+    
+  }
