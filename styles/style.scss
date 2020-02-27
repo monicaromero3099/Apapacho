@@ -3,15 +3,16 @@ $amarillo:#efd9aa;
 $rosa: #ffaaaf;
 $gris:#606060;
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
 *{
     box-sizing: border-box; 
 }
 
 html, body{
+    font-family: Montserrat;
     margin: 0;
-    font-family: 'Montserrat', sans-serif;   
+    font-size: 20px;
+    background-color: $azul;
 }
 /* _______________Menú de navegación principal______________________*/
 
@@ -19,33 +20,33 @@ html, body{
 
 .mainInicio{
     background-color: $azul;
-    height: 130px;
+    display: flex;
+
 }
 .contenedor{
-    max-width: 1200px;
+    max-width: 60rem;
     margin: 0px auto; /* para que deje el espacio a lado y lado*/
     display: flex; /* para que sus elementos queden en linea*/
-    padding: 0px 1px; /* espacio a lado y lado*/
+    padding: 3px 5px; /* espacio a lado y lado*/
 }
 
 .mainInicio__logo{
-
-    width: 338px;
-    height: 67px;
-    margin-top: 40px;
+    width: 17rem;
+    height: 3.35rem;
+    margin-top: 2rem;
 
 }
 
 .mainNav{
     display: wrap;
-    padding: 60px 100px; /* espacio a lado y lado*/
+    padding: 3rem 5rem; /* espacio a lado y lado*/
 }
 
 .mainNav__link{
     color:#fff;
     text-decoration: none;
-    padding: 6px 8px;
-    font-size: .8em;
+    padding: .3em .4em;
+    font-size: 1em;
 }
 
 .mainNav__link:hover{
@@ -53,20 +54,143 @@ html, body{
 }
 
 .mainnav__link:nth-child(1){
-    margin-left: -8px;
+    margin-left: -.4em;
 }
 
 .banner__imagenInicial{
     width: 100%;
+    margin: 0;
       
 }
 
 
 .banner__info{
     position: absolute;
-    top:450px;
-    left: 100px;
-    font-size: 21px;
-
-    
+    top: 35em;
+    left: 10em;  
+    font-size: 60%; 
+    color: white;
+ 
   }
+
+ 
+.banner__titulo{
+    -webkit-text-fill-color: none;
+    -webkit-text-stroke-width: .05em;
+    -webkit-text-stroke-color:white;
+    color: rgba(0, 0, 0, 0.1);
+    font-size: 9em;
+    margin:0;
+}
+
+.banner__titulo2{
+font-style: normal;
+font-weight: 700;
+font-size: 6em;
+margin:0;
+
+}
+.banner__parrafoUno {
+    font-size: 2em;
+}
+
+ 
+.banner__boton{
+    height: 100%;
+    width: 50%;
+    background-color: #3C948B;
+    border-top-right-radius: 11em;
+    border-bottom-right-radius: 11em;
+    border: none;
+    transition: background-color .5s ease;
+    outline: none;
+}
+.banner__button:hover{
+    background-color: #71c5bd;
+    cursor: pointer;
+}
+
+.mainTestimonios{
+    background-image: url(../images/fondoTestimonios.png);
+}
+.mainTestimonios__fondo{
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    
+
+}
+
+@media (max-width: 720px) {
+    .banner__info {
+      font-size: 40%;
+    }
+}
+
+.mainTestimonios__contenedor{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    padding: 12rem 6rem; /* espacio a lado y lado*/
+    margin: 0px auto;
+    
+
+
+}
+
+.contenedorUno{
+    background-color: white;
+    width: 285px;
+    height: 600px;   
+    margin: 25px; 
+
+
+}
+
+.contenedorDos{
+    background-color:white;
+    width: 285px;
+    height: 600px;
+    margin: 25px; 
+
+}
+
+.contenedorTres{
+    background-color:white;
+    width: 285px;
+    height: 600px;
+    margin: 25px;
+}
+
+.publicidad__uno{
+    width: 100%;
+    padding: 100px;
+}
+.publicidad__dos{
+    width: 100%;
+}
+.aboutUs{
+    display: flex;
+}
+
+.aboutUs__boyImage{
+    width: 50%;
+    display: inline;
+}
+.aboutUs__contenedorTexto{
+    color: white;
+    padding: 3em;
+
+}
+
+.aboutUs__titulo{
+    display: flex;
+}
+
+.slider__contenedor{
+    width: 400px;
+    height: 300px;
+}
+.slider{
+    display: flex;
+}
