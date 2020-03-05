@@ -18,6 +18,23 @@ html, body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.banner {
+  background-image: url(../images/imagenInicio.png);
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 1000px;
+  margin: 0;
+}
+
+.banner__imagenMobile {
+  opacity: 0;
+  position: static;
 }
 
 .contenedor {
@@ -59,9 +76,63 @@ html, body {
   margin-left: -.4em;
 }
 
-.banner__imagenInicial {
-  width: 100%;
-  margin: 0;
+.burgerBtn {
+  width: 2em;
+  height: 2em;
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .burgerBtn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 9%;
+    margin-top: 10%;
+  }
+  .mainNav {
+    position: absolute;
+    display: none;
+  }
+  .banner {
+    background-image: none;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .banner__info {
+    position: relative;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 40%;
+    top: 80px;
+  }
+  .mainTestimonios__contenedor {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .aboutUs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .aboutUs__Image {
+    width: 100%;
+  }
 }
 
 .banner__info {
@@ -72,12 +143,17 @@ html, body {
   color: white;
 }
 
+.banner__imagenMobile {
+  width: 100vw;
+}
+
 .banner__titulo {
   -webkit-text-fill-color: none;
-  -webkit-text-stroke-width: .05em;
+  -webkit-text-stroke-width: .03em;
   -webkit-text-stroke-color: white;
   color: rgba(0, 0, 0, 0.1);
   font-size: 9em;
+  font-weight: 700;
   margin: 0;
 }
 
@@ -93,19 +169,21 @@ html, body {
 }
 
 .banner__boton {
+  font-size: 2em;
+  font-weight: 200;
+  color: white;
   height: 100%;
   width: 50%;
-  background-color: #3C948B;
-  border-top-right-radius: 11em;
-  border-bottom-right-radius: 11em;
+  background-color: #efd9aa;
+  border-radius: 11em;
   border: none;
   -webkit-transition: background-color .5s ease;
   transition: background-color .5s ease;
   outline: none;
 }
 
-.banner__button:hover {
-  background-color: #71c5bd;
+.banner__boton:hover {
+  background-color: #79aded;
   cursor: pointer;
 }
 
@@ -119,9 +197,20 @@ html, body {
   position: absolute;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 600px) {
+  .banner {
+    background-image: none;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
   .banner__info {
     font-size: 40%;
+    position: relative;
+    top: 80px;
+  }
+  .banner__imagenMobile {
+    opacity: 100;
   }
 }
 
@@ -174,20 +263,50 @@ html, body {
   display: flex;
 }
 
-.aboutUs__boyImage {
-  width: 50%;
-  display: inline;
+.aboutUs__Image {
+  width: 100%;
+}
+
+.aboutUs__ImageBoy {
+  width: 100%;
 }
 
 .aboutUs__contenedorTexto {
   color: white;
-  padding: 3em;
+  padding: 1.5em;
+  width: 100%;
 }
 
 .aboutUs__titulo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tituloQuinientos {
+  background-color: #ffaaaf;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0px 20px 0px 0px;
+  font-size: 60px;
+}
+
+.tituloQuinientos h1 {
+  margin: 0;
+}
+
+.tituloDos {
+  margin: 0;
+  font-size: 15px;
+  width: 400px;
 }
 
 .slider__contenedor {

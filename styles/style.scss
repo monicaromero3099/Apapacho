@@ -1,7 +1,12 @@
+@import "./AboutUs.scss";
+@import "./testimonios.scss";
+
+
 $azul: #79aded;
 $amarillo:#efd9aa;
 $rosa: #ffaaaf;
 $gris:#606060;
+$breakpoint-sm: 600px;
 
 
 *{
@@ -21,8 +26,9 @@ html, body{
 .mainInicio{
     background-color: $azul;
     display: flex;
-
+    justify-content: space-between;
 }
+
 .contenedor{
     max-width: 60rem;
     margin: 0px auto; /* para que deje el espacio a lado y lado*/
@@ -34,7 +40,6 @@ html, body{
     width: 17rem;
     height: 3.35rem;
     margin-top: 2rem;
-
 }
 
 .mainNav{
@@ -53,20 +58,38 @@ html, body{
     color: $amarillo;
 }
 
-.mainnav__link:nth-child(1){
+.mainnav__link{
     margin-left: -.4em;
 }
 
-.banner__imagenInicial{
+
+.burgerBtn{
+    width: 2em;
+    height: 2em;
+    display: none;
+    cursor: pointer;
+}
+
+/* _______________BANNER INICIAL!!!______________________*/
+
+.banner{
+    background-image: url(../images/imagenInicio.png);
+    background-size: cover;
+    background-position: center center;
     width: 100%;
-    margin: 0;
-      
+    height: 1000px;
+    margin: 0;  
+}
+
+.banner__imagenMobile{
+    opacity: 0;
+    position: static;
 }
 
 
 .banner__info{
     position: absolute;
-    top: 35em;
+    top: 10em;
     left: 10em;  
     font-size: 60%; 
     color: white;
@@ -76,10 +99,11 @@ html, body{
  
 .banner__titulo{
     -webkit-text-fill-color: none;
-    -webkit-text-stroke-width: .05em;
+    -webkit-text-stroke-width: .03em;
     -webkit-text-stroke-color:white;
     color: rgba(0, 0, 0, 0.1);
     font-size: 9em;
+    font-weight: 700;
     margin:0;
 }
 
@@ -96,101 +120,49 @@ margin:0;
 
  
 .banner__boton{
+    font-size: 2em;
+    font-weight: 200;
+    color: white;
     height: 100%;
     width: 50%;
-    background-color: #3C948B;
-    border-top-right-radius: 11em;
-    border-bottom-right-radius: 11em;
+    background-color: $amarillo;
+    border-radius: 11em;
     border: none;
     transition: background-color .5s ease;
     outline: none;
 }
-.banner__button:hover{
-    background-color: #71c5bd;
+.banner__boton:hover{
+    background-color: $azul;
     cursor: pointer;
 }
 
-.mainTestimonios{
-    background-image: url(../images/fondoTestimonios.png);
-}
-.mainTestimonios__fondo{
-    width: 100%;
-    margin: 0;
-    position: absolute;
-    
 
-}
 
-@media (max-width: 720px) {
-    .banner__info {
-      font-size: 40%;
+@media (max-width: $breakpoint-sm){
+
+    /* _______________ media -- barra de menu ______________________*/
+
+    .burgerBtn{
+        display: flex;
+        margin-right: 9%;
+        margin-top: 10%;
     }
-}
 
-.mainTestimonios__contenedor{
-    width: 100%;
-    justify-content: center;
-    display: flex;
-    padding: 12rem 6rem; /* espacio a lado y lado*/
-    margin: 0px auto;
-    
+    .mainNav{
+        position: absolute;
+        display: none;
+    }
 
+    .banner{
+        background-image: none;
+    }
 
-}
+    /* _______________ media -- Bannner ______________________*/
 
-.contenedorUno{
-    background-color: white;
-    width: 285px;
-    height: 600px;   
-    margin: 25px; 
-
-
-}
-
-.contenedorDos{
-    background-color:white;
-    width: 285px;
-    height: 600px;
-    margin: 25px; 
-
-}
-
-.contenedorTres{
-    background-color:white;
-    width: 285px;
-    height: 600px;
-    margin: 25px;
-}
-
-.publicidad__uno{
-    width: 100%;
-    padding: 100px;
-}
-.publicidad__dos{
-    width: 100%;
-}
-.aboutUs{
-    display: flex;
-}
-
-.aboutUs__boyImage{
-    width: 50%;
-    display: inline;
-}
-.aboutUs__contenedorTexto{
-    color: white;
-    padding: 3em;
-
-}
-
-.aboutUs__titulo{
-    display: flex;
-}
-
-.slider__contenedor{
-    width: 400px;
-    height: 300px;
-}
-.slider{
-    display: flex;
+    .banner__info{
+        position: absolute;
+        justify-content: center;
+        font-size: 40%;
+        top: 80px;
+    }
 }
