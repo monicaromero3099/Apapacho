@@ -1,6 +1,3 @@
-@import "./AboutUs.scss";
-@import "./testimonios.scss";
-
 
 $azul: #79aded;
 $amarillo:#efd9aa;
@@ -89,7 +86,7 @@ html, body{
 
 .banner__info{
     position: absolute;
-    top: 10em;
+    top: 40em;
     left: 10em;  
     font-size: 60%; 
     color: white;
@@ -166,3 +163,8 @@ margin:0;
         top: 80px;
     }
 }
+
+@import 'AboutUs';
+@import 'testimonios';
+@import 'mensajes';
+@import 'table';
