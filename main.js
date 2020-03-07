@@ -28,13 +28,12 @@ function handleButtonD(){
     if(quality==6){
         quality=0;
     }
-
 }
 function handleButtonI(){
 
     quality--;
     buttonImage.setAttribute('src', '/images/peluche' +  quality + '.png');
-    if(quality==1){
+    if(quality==0){
         quality=6;
     }
 
