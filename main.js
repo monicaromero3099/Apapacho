@@ -13,19 +13,34 @@ handleSliderMensageInput();
 sliderMensageInput.addEventListener('input', handleSliderMensageInput);
 
 //slider Tabla de propiedades 
-var buttonImage=document.querySelector('especificaciones__image');
+var buttonImage=document.querySelector('.especificaciones__image');
 var buttonTableD=document.querySelector('.dimensiones');
 var buttonTableP=document.querySelector('.poliester');
 var buttonTableA=document.querySelector('.algodon');
 var buttonIzq=document.querySelector('.btnIzq');
 var buttonDer=document.querySelector('.btnDer');
-var  quality = 0;
+var  quality = 1;
 
-function handleButton(){
+function handleButtonD(){
 
-    quality=1;
+    quality++;
     buttonImage.setAttribute('src', '/images/peluche' +  quality + '.png');
+    if(quality==6){
+        quality=0;
+    }
+
+}
+function handleButtonI(){
+
+    quality--;
+    buttonImage.setAttribute('src', '/images/peluche' +  quality + '.png');
+    if(quality==1){
+        quality=6;
+    }
+
     console.log(quality);
 }
-
-buttonDer.addEventListener('click', handleButton);
+handleButtonD();
+handleButtonI();
+buttonDer.addEventListener('click', handleButtonD);
+buttonIzq.addEventListener('click', handleButtonI);
