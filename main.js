@@ -18,11 +18,14 @@ var buttonTableD=document.querySelector('.dimensiones');
 var buttonTableP=document.querySelector('.poliester');
 var buttonTableA=document.querySelector('.algodon');
 var buttonIzq=document.querySelector('.btnIzq');
-var buttonIzq=document.querySelector('.btnDer');
+var buttonDer=document.querySelector('.btnDer');
+var  quality = 0;
 
 function handleButton(){
-    var index = buttonIzq.
-    buttonImage.setAttribute('src', '/images/peluche' + index + '.png');
+
+    quality=1;
+    buttonImage.setAttribute('src', '/images/peluche' +  quality + '.png');
+    console.log(quality);
 }
 
-buttonImage.addEventListener('click', handleButton);
+buttonDer.addEventListener('click', handleButton);
