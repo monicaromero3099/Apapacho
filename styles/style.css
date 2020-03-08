@@ -292,6 +292,30 @@ html, body {
   }
 }
 
+.mensajes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mensajes__contenedor {
+  padding: 50px 50px 0px 150px;
+  margin: 0px;
+  color: white;
+  font-size: 25px;
+  background: #ffaaaf;
+}
+
+.mensajes__contenedor strong {
+  -webkit-text-fill-color: none;
+  -webkit-text-stroke-width: .03em;
+  -webkit-text-stroke-color: white;
+  color: rgba(0, 0, 0, 0.1);
+  font-size: 2em;
+  font-weight: 700;
+  margin: 0;
+}
+
 .sliderMensage {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -300,14 +324,15 @@ html, body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 300px;
-  height: 500px;
-  margin: 0 auto;
+  width: 600px;
+  height: 550px;
+  padding: 0px 150px 0px 0px;
+  background: #efd9aa;
 }
 
 .sliderMensage__image {
-  width: 100%;
-  height: 100%;
+  width: 350px;
+  height: 550px;
 }
 
 .sliderMensage__input {
@@ -346,6 +371,9 @@ table {
   color: white;
   height: 400px;
   margin: 50px 50px 50px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 th {
@@ -390,6 +418,7 @@ td {
   border: 0px solid #79aded;
   outline: none;
   margin-top: 200px;
+  cursor: pointer;
 }
 
 .btnIzq {
@@ -399,5 +428,65 @@ td {
   border: 0px solid #79aded;
   outline: none;
   margin-top: 200px;
+  cursor: pointer;
+}
+
+.subscribe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px 250px 20px 250px;
+  background: #ffaaaf;
+  color: white;
+}
+
+.subscribe__titulo {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.subscribe__titulo2 {
+  margin: 0;
+}
+
+.subscribe__input {
+  height: 40px;
+  width: 500px;
+  border-radius: 13px;
+  outline: none;
+  margin-top: 0px;
+  border: solid #efd9aa;
+}
+
+.subscribe__boton {
+  font-size: 1em;
+  font-weight: 400;
+  text-align: center;
+  color: white;
+  height: 50%;
+  width: 30%;
+  background-color: #efd9aa;
+  border-radius: 11em;
+  border: none;
+  -webkit-transition: background-color .5s ease;
+  transition: background-color .5s ease;
+  outline: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 15px;
+  padding: 9px;
+}
+
+.subscribe__boton:hover {
+  background-color: #79aded;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
