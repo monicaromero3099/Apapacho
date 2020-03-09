@@ -375,6 +375,28 @@ html, body {
   margin-top: -11px;
 }
 
+@media (max-width: 575px) {
+  .mensajes {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .mensajes__contenedor {
+    padding: 50px;
+    font-size: 20px;
+    text-align: center;
+  }
+  .sliderMensage {
+    padding: 0px;
+    width: 100%;
+    height: 550px;
+  }
+  .sliderMensage__image {
+    margin: 0px 80px;
+  }
+}
+
 table {
   color: white;
   height: 400px;
@@ -382,6 +404,13 @@ table {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.especificaciones__mobile {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 th {

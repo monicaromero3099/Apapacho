@@ -1,6 +1,7 @@
 .mensajes{
   display: flex;
 }
+
 .mensajes__contenedor{
   padding: 50px 50px 0px 150px;
   margin: 0px;
@@ -43,9 +44,11 @@
   background: $azul;
   padding: 30px;
 }
+
 .sliderMensage__input:focus {
   outline: none;
 }
+
 .sliderMensage__input::-webkit-slider-runnable-track {
   width: 100%;
   height: 7px;
@@ -67,4 +70,25 @@
 }
 
 @media (max-width: $breakpoint-sm){
+
+  .mensajes{
+    flex-direction: column;
+  }
+
+  .mensajes__contenedor{
+    padding: 50px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .sliderMensage{
+    padding: 0px;
+    width: 100%;
+    height: 550px;
+
+  } 
+  .sliderMensage__image{
+    margin: 0px 80px;
+
+  } 
 }

@@ -5,6 +5,9 @@ table{
     display: flex;
 }
 
+.especificaciones__mobile{
+    flex-direction: row;
+}
 th{
     padding: 20px;
     border: 1px solid white;
