@@ -7,7 +7,8 @@ function handleSliderMensageInput() {
     
     var index = sliderMensageInput.value;
     
-    sliderMensageImage.setAttribute('src', '/images/carta' + index + '.png');
+    sliderMensageImage.setAttribute('src', './images/carta' + index + '.png');
+    
 }
 handleSliderMensageInput();
 sliderMensageInput.addEventListener('input', handleSliderMensageInput);
@@ -24,7 +25,7 @@ var  quality = 1;
 function handleButtonD(){
 
     quality++;
-    buttonImage.setAttribute('src', '/images/peluche' +  quality + '.png');
+    buttonImage.setAttribute('src', './images/peluche' +  quality + '.png');
     if(quality==6){
         quality=0;
     }
