@@ -28,6 +28,32 @@ function handleButtonD(){
     if(quality==6){
         quality=0;
     }
+    switch (quality) {
+        case 2:
+            document.getElementById("especificaciones__change").innerHTML= "20cmx35cm";
+            break;
+
+        case 3:
+            document.getElementById("especificaciones__change").innerHTML= "30cmx20cm";
+            break;        
+        
+        case 4:
+            document.getElementById("especificaciones__change").innerHTML= "40cmx30cm";
+            break;
+
+        case 5:
+            document.getElementById("especificaciones__change").innerHTML= "20cmx40cm";
+            break; 
+            
+        case 6:
+            document.getElementById("especificaciones__change").innerHTML= "40cmx30cm";
+            break;         
+        
+        case 1:
+            document.getElementById("especificaciones__change").innerHTML= "20cmx35cm";
+            break;  
+    }
+
 }
 function handleButtonI(){
 
@@ -35,6 +61,31 @@ function handleButtonI(){
     buttonImage.setAttribute('src', '/images/peluche' +  quality + '.png');
     if(quality==0){
         quality=6;
+    }
+    switch (quality) {
+        case 2:
+            document.getElementById("especificaciones__change").innerHTML= "20cmx35cm";
+            break;
+
+        case 3:
+            document.getElementById("especificaciones__change").innerHTML= "30cmx20cm";
+            break;        
+        
+        case 4:
+            document.getElementById("especificaciones__change").innerHTML= "40cmx30cm";
+            break;
+
+        case 5:
+            document.getElementById("especificaciones__change").innerHTML= "20cmx40cm";
+            break; 
+            
+        case 6:
+            document.getElementById("especificaciones__change").innerHTML= "40cmx30cm";
+            break;         
+        
+        case 1:
+            document.getElementById("especificaciones__change").innerHTML= "20cmx35cm";
+            break;  
     }
 
     console.log(quality);
