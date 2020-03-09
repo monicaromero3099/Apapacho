@@ -246,6 +246,11 @@ html, body {
   margin: 25px;
 }
 
+.mainTestimonios__parrafo {
+  padding: 20px;
+  font-size: 14px;
+}
+
 .contenedorDos {
   background-color: white;
   width: 285px;
