@@ -1,8 +1,8 @@
 .subscribe{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 20px 250px 20px 250px; 
+    align-content: center;
+    padding: 20px 300px 20px 300px; 
     background: $rosa;
     color: white;
 
@@ -37,7 +37,7 @@
     text-align: center;
     color: white;
     height: 50%;
-    width: 30%;
+    width: 21%;
     background-color: $amarillo;
     border-radius: 11em;
     border: none;
