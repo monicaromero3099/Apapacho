@@ -489,4 +489,45 @@ td {
   background-color: #79aded;
   cursor: pointer;
 }
+
+.mainfooter__redes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 50px;
+}
+
+.mainfooter__image {
+  width: 50px;
+  height: 50px;
+}
+
+.mainfooter__link {
+  color: white;
+  font-weight: 100;
+  text-align: center;
+}
+
+.mainfooter__logo {
+  width: 250px;
+  height: 43px;
+  margin: 50px 200px 50px 520px;
+}
+
+.mainfooter__info {
+  color: white;
+}
+
+.mainfooter__information {
+  text-align: center;
+  font-size: 15px;
+  margin: 0px 0px 30  px 0px;
+}
+
+.mainfooter__banner {
+  margin: 0px 350px 0px 350px;
+}
 /*# sourceMappingURL=style.css.map */
