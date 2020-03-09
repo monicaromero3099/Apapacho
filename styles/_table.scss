@@ -6,6 +6,7 @@ table{
 }
 
 .especificaciones__mobile{
+    display: flex;
     flex-direction: row;
 }
 th{
@@ -72,13 +73,14 @@ td{
 }
 
 @media (max-width: $breakpoint-sm){
-
-    .especificaciones__mobile{
-        flex-direction: column;
-    }
+    
     .especificaciones__image{
         width: 380px;
         height: 380px;
+    }
+
+    .especificaciones__mobile{
+        flex-direction: column;
     }
 
     .btnDer__image{

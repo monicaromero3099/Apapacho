@@ -1,3 +1,8 @@
+.mainvideo__video{
+    width: 100%;
+    height: 500px;
+}
+
 .mainfooter__redes{
   display: flex;
   justify-content: center;
@@ -36,4 +41,30 @@
 
 .mainfooter__banner{
     margin: 0px 350px 0px 350px;
+}
+
+@media (max-width: $breakpoint-sm){
+
+    .mainfooter__redes{
+        margin: 30px;
+    }
+
+    .mainfooter__banner{
+        text-align: initial;
+        margin: 20px 45px;
+        font-size: 15px;
+       
+    }
+
+    .mainfooter__information{
+        text-align: center;
+        font-size: 15px;
+        margin: 0px 0px 40px 0px;
+    }
+
+    .mainfooter__logo{
+        justify-items: center;
+        margin: 10px 130px;
+
+    }
 }

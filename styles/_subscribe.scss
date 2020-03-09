@@ -54,3 +54,19 @@
     background-color: $azul;
     cursor: pointer;
 }
+
+@media (max-width: $breakpoint-sm){
+
+    .subscribe{
+        padding: 40px; 
+    } 
+
+    .subscribe__input{
+        width: 400px;
+    }
+    
+    .subscribe__boton{
+        width: 34%;
+    }
+    
+}
