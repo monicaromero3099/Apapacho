@@ -33,3 +33,16 @@
       margin:0;
     }
   }
+
+
+@media (max-width: $breakpoint-sm){
+
+    .mensaje1__contenedor{
+        padding: 50px 50px 0px 50px;
+    }
+
+    .mensaje2__contenedor{
+        padding: 50px 40px 0px 50px;
+
+    }
+}

@@ -79,9 +79,8 @@ html, body {
   margin: 0;
 }
 
-.banner__imagenMobile {
+.banner__imagen {
   opacity: 0;
-  position: static;
 }
 
 .banner__info {
@@ -132,7 +131,7 @@ html, body {
   cursor: pointer;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 575px) {
   /* _______________ media -- barra de menu ______________________*/
   .burgerBtn {
     display: -webkit-box;
@@ -147,6 +146,12 @@ html, body {
   }
   .banner {
     background-image: none;
+    height: 840px;
+  }
+  .banner__imagen {
+    opacity: 1;
+    width: 100%;
+    height: 400px;
   }
   /* _______________ media -- Bannner ______________________*/
   .banner__info {
@@ -155,7 +160,7 @@ html, body {
         -ms-flex-pack: center;
             justify-content: center;
     font-size: 40%;
-    top: 80px;
+    top: 580px;
   }
 }
 
@@ -264,7 +269,7 @@ html, body {
   width: 100%;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 575px) {
   /* _______________ media -- testimonios ______________________*/
   .mainTestimonios__contenedor {
     display: -webkit-box;
@@ -563,5 +568,14 @@ td {
   color: rgba(0, 0, 0, 0.1);
   font-size: 2em;
   margin: 0;
+}
+
+@media (max-width: 575px) {
+  .mensaje1__contenedor {
+    padding: 50px 50px 0px 50px;
+  }
+  .mensaje2__contenedor {
+    padding: 50px 40px 0px 50px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

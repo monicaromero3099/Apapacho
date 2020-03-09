@@ -3,7 +3,7 @@ $azul: #79aded;
 $amarillo:#efd9aa;
 $rosa: #ffaaaf;
 $gris:#606060;
-$breakpoint-sm: 600px;
+$breakpoint-sm: 575px;
 
 
 *{
@@ -78,11 +78,9 @@ html, body{
     margin: 0;  
 }
 
-.banner__imagenMobile{
+.banner__imagen{
     opacity: 0;
-    position: static;
 }
-
 
 .banner__info{
     position: absolute;
@@ -152,6 +150,13 @@ margin:0;
 
     .banner{
         background-image: none;
+        height: 840px;
+    }
+
+    .banner__imagen{
+        opacity: 1;
+        width: 100%;
+        height: 400px;
     }
 
     /* _______________ media -- Bannner ______________________*/
@@ -160,7 +165,7 @@ margin:0;
         position: absolute;
         justify-content: center;
         font-size: 40%;
-        top: 80px;
+        top: 580px;
     }
 }
 
