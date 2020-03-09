@@ -8,7 +8,7 @@ function handleSliderMensageInput() {
     var index = sliderMensageInput.value;
     
     sliderMensageImage.setAttribute('src', './images/carta' + index + '.png');
-    
+
 }
 handleSliderMensageInput();
 sliderMensageInput.addEventListener('input', handleSliderMensageInput);
